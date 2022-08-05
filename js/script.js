@@ -427,24 +427,17 @@ $(window).on("load", function () {
                     goUp = goUp / 1.5 * 1;
                     $(".single-board").eq(0).css("transform", "translate(0px, " + goUp + "px)");
                     $(".single-board").eq(1).css("transform", "translate(0px, 0px)");
-                    $(".single-board").eq(2).css("transform", "translate(0px, 0px)");
                 } else if ($(window).scrollTop() >= that3.stickyHeight.offset().top + window.innerHeight * 1.5 && $(window).scrollTop() <= that3.stickyHeight.offset().top + window.innerHeight * 3) {
                     $(".single-board").eq(0).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
                     var goUp = -($(window).scrollTop() - (that3.stickyHeight.offset().top + window.innerHeight * 1.5));
                     goUp = goUp / 1.5 * 1;
                     $(".single-board").eq(1).css("transform", "translate(0px, " + goUp + "px)");
-                    $(".single-board").eq(2).css("transform", "translate(0px, 0px)");
                 } else if ($(window).scrollTop() >= that3.stickyHeight.offset().top + window.innerHeight * 3 && $(window).scrollTop() <= that3.stickyHeight.offset().top + window.innerHeight * 4.5) {
                     $(".single-board").eq(0).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
                     $(".single-board").eq(1).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
                     var goUp = -($(window).scrollTop() - (that3.stickyHeight.offset().top + window.innerHeight * 3));
                     goUp = goUp / 1.5 * 1;
-                    $(".single-board").eq(2).css("transform", "translate(0px, " + goUp + "px)");
-                } else if ($(window).scrollTop() >= that3.stickyHeight.offset().top + window.innerHeight * 4.5) {
-                    $(".single-board").eq(0).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
-                    $(".single-board").eq(1).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
-                    $(".single-board").eq(2).css("transform", "translate(0px, " + (-(window.innerHeight)) + "px)");
-                }
+                } 
             }
         }
     }
@@ -515,35 +508,6 @@ $(window).on("load", function () {
         }
     }
     new Portfolio();
-
-    var thatTab;
-    class Tab {
-        constructor() {
-            thatTab = this;
-            thatTab.flag = true;
-            thatTab.init();
-        }
-
-        init() {
-            $(".accordion-title").click(thatTab.tabClicked);
-        }
-
-        tabClicked() {
-            if (thatTab.flag && !$(this).parent(".single-accordion").hasClass("active")) {
-                thatTab.flag = false;
-                var index = $(this).parent(".single-accordion").index();
-                $(this).parent(".single-accordion").toggleClass("active").siblings().removeClass("active");
-                $(this).siblings(".accordion-detail").slideToggle(500, function () {
-                    thatTab.flag = true;
-                }).parent(".single-accordion").siblings().children(".accordion-detail").slideUp(500);
-                $(".single-features-img-box").removeClass("show");
-                setTimeout(function () {
-                    $(".single-features-img-box").eq(index).addClass("show");
-                }, 300);
-            }
-        }
-    }
-    new Tab();
 
     var thatFNB;
     class FadeAndBubble {
@@ -680,7 +644,7 @@ $(window).on("load", function () {
             var howMuchScroll = $(window).scrollTop() + window.innerHeight / 2;
             if (window.innerWidth > 768) {
                 if (howMuchScroll >= thatProcess.top && howMuchScroll < thatProcess.top + thatProcess.height * 0.1) {
-                    thatProcess.controlClass(true, "Start your<br>journey to<br>Excellence now", false, true);
+                    thatProcess.controlClass(true, "Explore my<br>education<br>journey now", false, true);
                 } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.1 && howMuchScroll < thatProcess.top + thatProcess.height * 0.34) {
                     thatProcess.controlClass(false, false, "1");
                     $(".process-section .process-1").addClass("current").siblings().removeClass("current");
@@ -694,7 +658,7 @@ $(window).on("load", function () {
                     thatProcess.controlClass(false, false, "4");
                     $(".process-section .process-4").addClass("current").siblings().removeClass("current");
                 } else if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.9) {
-                    thatProcess.controlClass(true, "KA POOM!<br> a tailored made <br> company website<br> is prepared.", false);
+                    thatProcess.controlClass(true, "The learning process<br>continues until<br> the day you die.", false);
                 }
             } else {
                 if (howMuchScroll >= thatProcess.top + thatProcess.height * 0.05 && howMuchScroll < thatProcess.top + thatProcess.height * 0.315) {
