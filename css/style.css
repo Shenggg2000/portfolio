@@ -628,6 +628,30 @@ body.black .top-nav-sec.fixed-nav .top-nav {
     height: 100%;
 }
 
+.landing-section .landing-effect-right .laptop-screen .languages-box{
+  width: calc(70px * 6);
+}
+
+.landing-section .landing-effect-right .laptop-screen .languages{
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+
+.landing-section .landing-effect-right .laptop-screen .languages img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: none;
+  transition: .25s;
+  transform-origin: center;
+}
+
+.landing-section .landing-effect-right .laptop-screen .languages img:hover{
+  transform: scale(1.1);
+}
+
 .landing-section .landing-effect-right .laptop-screen>.container {
     height: 100%;
     position: relative;
@@ -635,16 +659,11 @@ body.black .top-nav-sec.fixed-nav .top-nav {
 }
 
 .landing-section .landing-effect-right .laptop-screen .selections {
-    position: relative;
-    transition: .5s ease-in-out;
-    left: 0%;
-    overflow: hidden;
-    height: 100%;
-    padding: 10px;
+    height: 20%;
 }
 
-.landing-section .landing-effect-right .laptop-screen .selections .selections-title {
-    height: 20%;
+.landing-section .landing-effect-right .laptop-screen .selections-title {
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;

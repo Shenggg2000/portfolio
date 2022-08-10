@@ -1,6 +1,6 @@
 $(window).on("load", function () {
     var thatPD;
-    class PageDefault {
+    class PageDefaultSetting {
         constructor() {
             thatPD = this;
             thatPD.emailChange = $(".email-change").html();
@@ -115,10 +115,10 @@ $(window).on("load", function () {
             }
         }
     }
-    new PageDefault();
+    new PageDefaultSetting();
 
     var thatCursor;
-    class Cursor {
+    class CursorEffect {
         constructor() {
             thatCursor = this;
             thatCursor.currentA;
@@ -232,9 +232,9 @@ $(window).on("load", function () {
             $(this).css("transform", "translate(" + moveX + "px, " + moveY + "px)");
         }
     }
-    new Cursor();
+    new CursorEffect();
 
-    class SideMenu {
+    class SideMenuEffect {
         constructor() {
             this.init();
         }
@@ -254,10 +254,10 @@ $(window).on("load", function () {
             }
         }
     }
-    new SideMenu();
+    new SideMenuEffect();
 
     var thatTR;
-    class TextRunning {
+    class TextRunningEffect {
         constructor() {
             thatTR = this;
             thatTR.interval;
@@ -399,10 +399,10 @@ $(window).on("load", function () {
             }, 10);
         }
     }
-    new TextRunning();
+    new TextRunningEffect();
 
     var that3;
-    class ThreeBoard {
+    class ThreeBoardEffect {
         constructor() {
             that3 = this;
             that3.stickyHeight = $(".sticky-height").first();
@@ -441,11 +441,11 @@ $(window).on("load", function () {
             }
         }
     }
-    new ThreeBoard();
+    new ThreeBoardEffect();
 
 
     var thatP;
-    class Portfolio {
+    class PortfolioEffect {
         constructor() {
             thatP = this;
             thatP.portfolioWidth;
@@ -507,7 +507,7 @@ $(window).on("load", function () {
             }
         }
     }
-    new Portfolio();
+    new PortfolioEffect();
 
     var thatFNB;
     class FadeAndBubble {
