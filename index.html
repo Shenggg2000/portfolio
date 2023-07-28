@@ -5,20 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Portfolio | Goh You Sheng</title>
+  <link rel="icon" type="image/png" href="images/icon.png">
+  <meta name="title" content="Portfolio | Goh You Sheng" />
+  <meta name="description"
+    content="Welcome to my portfolio site! I am a passionate and skilled frontend developer showcasing my work and projects. Explore my portfolio to see examples of my creative designs and innovative solutions. With expertise in frontend development, I aim to make a positive impact through my work. Feel free to get in touch for potential collaborations or opportunities." />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://shenggg2000.github.io/portfolio/" />
+  <meta property="og:title" content="Portfolio | Goh You Sheng" />
+  <meta property="og:description"
+    content="Welcome to my portfolio site! I am a passionate and skilled frontend developer showcasing my work and projects. Explore my portfolio to see examples of my creative designs and innovative solutions. With expertise in frontend development, I aim to make a positive impact through my work. Feel free to get in touch for potential collaborations or opportunities." />
+  <meta property="og:image" content="https://shenggg2000.github.io/portfolio/images/portfolio-smart-energy-monitoring.png" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://shenggg2000.github.io/portfolio/" />
+  <meta property="twitter:title" content="Portfolio | Goh You Sheng" />
+  <meta property="twitter:description"
+    content="Welcome to my portfolio site! I am a passionate and skilled frontend developer showcasing my work and projects. Explore my portfolio to see examples of my creative designs and innovative solutions. With expertise in frontend development, I aim to make a positive impact through my work. Feel free to get in touch for potential collaborations or opportunities." />
+  <meta property="twitter:image" content="https://shenggg2000.github.io/portfolio/images/portfolio-smart-energy-monitoring.png" />
+  
   <!-- import bootstrap, font awesome & custom style -->
-  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="fonts/fontawesome-free-5.15.1-web/css/all.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/css/lightgallery.min.css">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="plugins/slick/slick.css">
-  <link rel="stylesheet" href="plugins/slick/slick-theme.css">
   <!-- import jquery and bootstrap -->
-  <script src="js/jquery.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/particles-js/particles.min.js"></script>
-  <script type="text/javascript" src="plugins/slick/slick.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
+  <script src="js/portfolios.js"></script>
 </head>
 
 <body>
@@ -64,20 +84,17 @@
         </div>
         <div class="mobile-bottom-contact">
           <div class="nav-phone-number">
-            <p>Call us for more information</p>
-            <a href="tel:+60174721461">0174721461</a>
+            <p>Contact for more information</p>
+            <a href="tel:+60167663525">(+60)16-766-3525</a>
           </div>
           <div class="nav-social-media">
-            <a href="https://www.facebook.com/newpages.asia/" target="_blank">
-              <i class="fab fa-facebook-square"></i>
+            <a href="https://github.com/Shenggg2000" target="_blank">
+              <i class="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/newpages.asia/" target="_blank">
-              <i class="fab fa-instagram"></i>
+            <a href="https://www.linkedin.com/in/you-sheng-goh-b4a0b5232/" target="_blank">
+              <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.youtube.com/channel/UCoI2NcYa64QxEMGxWZn8MmA" target="_blank">
-              <i class="fab fa-youtube"></i>
-            </a>
-            <a href="http://wa.me/60174721461" target="_blank">
+            <a href="http://wa.me/60167663525" target="_blank">
               <i class="fab fa-whatsapp"></i>
             </a>
           </div>
@@ -101,7 +118,7 @@
       <div class="row">
         <div class="col-md-12 landing-effect-right landing-fade-up-item">
           <div class="laptop-wrapper">
-            <img src="https://www.newpages2u.com/userfiles/22643/image/home-mac.png" alt="">
+            <img src="./images/home-mac.png" alt="">
             <div class="screen-wrapper">
               <div class="laptop-screen">
                 <div class="laptop-cursor">
@@ -110,62 +127,333 @@
                       stroke-width="10" fill="#000" />
                   </svg>
                 </div>
-                <div class="container h-100">
+                <div class="container">
                   <div class="row selections">
                     <div class="col-md-12 selections-title">
-                      <p>Skills</p>
+                      <p>Explore my skills</p>
+                    </div>
+                    <div class="col-md-6 single-selection">
+                      <div class="select-card" data-selection="1">
+                        <p>Programming Languages</p>
+                        <i class="fas fa-code"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-6 single-selection">
+                      <div class="select-card" data-selection="2">
+                        <p>Frontend</p>
+                        <i class="fas fa-desktop"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-6 single-selection">
+                      <div class="select-card" data-selection="3">
+                        <p>Backend</p>
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-6 single-selection">
+                      <div class="select-card" data-selection="4">
+                        <p>Tools</p>
+                        <i class="fas fa-tools"></i>
+                      </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <p class="text-center mb-2">Programming Languages & Frameworks</p>
+                  <div class="row select-result select-result-a">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="languages-box d-flex flex-wrap justify-content-center mx-auto">
-                        <div class="languages">
-                          <img src="./images/icon/800px-Devicon-html5-plain-wordmark.svg.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/CSS3_logo_and_wordmark.svg.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/javascript.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/node.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/768px-Vue.js_Logo_2.svg.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/react.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/java.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/PHP-logo.svg.png" alt="">
-                        </div>
-                        <div class="languages">
-                          <img src="./images/icon/75px-Laravel.svg.png" alt="">
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>HTML5</h6>
+                                <p>Proficient in the features of HTML5.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/css3.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>CSS3</h6>
+                                <p>Proficient in the features of CSS3 and CSS preprocessor <b>SASS</b>.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>JavaScript</h6>
+                                <p>Proficient in <b>ES6</b> features of Javascript and <b>TypeScript</b>.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Java</h6>
+                                <p>Proficient in Java syntax and object-oriented programming concepts.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/ios-filled/50/php-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>PHP</h6>
+                                <p>Knowledgeable about the basic usage of PHP.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <p class="text-center my-2">Tools</p>
+                  <div class="row select-result select-result-b">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
                     </div>
-                    <div class="col-md-12">
-                      <div class="languages-box d-flex flex-wrap justify-content-center mx-auto">
-                        <div class="languages">
-                          <img src="./images/icon/Git_icon.svg.png" alt="">
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/officel/80/react.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>React</h6>
+                                <p>Proficient in developing SPAs using React, Redux, and Ant Design.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/vue-js.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Vue</h6>
+                                <p>Proficient in using Vue 2 and have project development experience.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/angularjs.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Angular</h6>
+                                <p>Proficient in developing a reusable component library for internal company use using
+                                  Angular.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/webpack.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Webpack</h6>
+                                <p>Familiar with basic configurations of Webpack.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/officel/80/react.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>React Native</h6>
+                                <p>Proficient in developing mobile applications using React Native.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://nextjs.org/favicon.ico" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Next.js</h6>
+                                <p>Familiar with the Next.js framework for server-side rendering.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="languages">
-                          <img src="./images/icon/figma-logo.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row select-result select-result-c">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/nodejs.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>node.js</h6>
+                                <p>Proficient in developing APIs using node.js and express.js.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/fluency/48/laravel.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Laravel</h6>
+                                <p>Proficient in developing applications and APIs using Laravel.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>MySql</h6>
+                                <p>Proficient in using MySql and knowledgeable about SQL syntax and relational
+                                  databases.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/firebase.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Firebase</h6>
+                                <p>Proficient in using Firebase's Firestore and Cloud Messaging functionalities.</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                        <div class="languages">
-                          <img src="./images/icon/postman-icon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row select-result select-result-d">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/figma--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Figma</h6>
+                                <p>Proficient in using Figma for UI/UX design and creating prototypes.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/git.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Git</h6>
+                                <p>Proficient in using version control tools like Git.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/fluency/48/docker.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>Docker</h6>
+                                <p>Currently learning Docker and Kubernetes</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-6 py-3 pr-4 pl-0 single-skill">
+                            <div class="row">
+                              <div class="col-md-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-md-10 pl-4">
+                                <h6>AWS</h6>
+                                <p>Currently learning AWS (Amazon Web Services)</p>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -215,15 +503,339 @@
             </div>
           </div>
           <div class="phone-wrapper">
-            <img src="https://www.newpages2u.com/userfiles/22643/image/home-phone.png" alt="">
+            <img src="./images/home-phone.png" alt="">
             <div class="phone-screen-wrapper">
               <div class="phone-screen">
                 <div class="container">
                   <div class="row selections">
                     <div class="col-md-12 selections-title">
-                      <p>Skills</p>
+                      <p>Explore my skills</p>
                     </div>
-
+                    <div class="col-md-12 single-selection">
+                      <div class="select-card" data-selection="1">
+                        <p>Programming Languages</p>
+                        <i class="fas fa-code"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-12 single-selection">
+                      <div class="select-card" data-selection="2">
+                        <p>Frontend</p>
+                        <i class="fas fa-desktop"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-12 single-selection">
+                      <div class="select-card" data-selection="3">
+                        <p>Backend</p>
+                        <i class="fas fa-database"></i>
+                      </div>
+                    </div>
+                    <div class="col-md-12 single-selection">
+                      <div class="select-card" data-selection="4">
+                        <p>Tools</p>
+                        <i class="fas fa-tools"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row select-result select-result-a">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/html-5--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>HTML5</h6>
+                                <p>Proficient in the features of HTML5.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/css3.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>CSS3</h6>
+                                <p>Proficient in the features of CSS3 and CSS preprocessor <b>SASS</b>.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/javascript--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>JavaScript</h6>
+                                <p>Proficient in <b>ES6</b> features of Javascript and <b>TypeScript</b>.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/java-coffee-cup-logo--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Java</h6>
+                                <p>Proficient in Java syntax and object-oriented programming concepts.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/ios-filled/50/php-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>PHP</h6>
+                                <p>Knowledgeable about the basic usage of PHP.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row select-result select-result-b">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/officel/80/react.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>React</h6>
+                                <p>Proficient in developing SPAs using React, Redux, and Ant Design.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/vue-js.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Vue</h6>
+                                <p>Proficient in using Vue 2 and have project development experience.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/angularjs.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Angular</h6>
+                                <p>Proficient in developing a reusable component library for internal company use using
+                                  Angular.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/webpack.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Webpack</h6>
+                                <p>Familiar with basic configurations of Webpack.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/officel/80/react.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>React Native</h6>
+                                <p>Proficient in developing mobile applications using React Native.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://nextjs.org/favicon.ico" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Next.js</h6>
+                                <p>Familiar with the Next.js framework for server-side rendering.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row select-result select-result-c">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/nodejs.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>node.js</h6>
+                                <p>Proficient in developing APIs using node.js and express.js.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/fluency/48/laravel.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Laravel</h6>
+                                <p>Proficient in developing applications and APIs using Laravel.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/mysql-logo.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>MySql</h6>
+                                <p>Proficient in using MySql and knowledgeable about SQL syntax and relational
+                                  databases.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/firebase.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Firebase</h6>
+                                <p>Proficient in using Firebase's Firestore and Cloud Messaging functionalities.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row select-result select-result-d">
+                    <div class="col-md-12 back-button-wrapper">
+                      <div class="back-button">
+                        <i class="fas fa-chevron-left"></i><span>back</span>
+                      </div>
+                    </div>
+                    <div class="col-md-12 result-wrapper">
+                      <div class="container no-gutters">
+                        <div class="row">
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/figma--v1.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Figma</h6>
+                                <p>Proficient in using Figma for UI/UX design and creating prototypes.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/git.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Git</h6>
+                                <p>Proficient in using version control tools like Git.</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/fluency/48/docker.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>Docker</h6>
+                                <p>Currently learning Docker and Kubernetes</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-12 py-3 px-0 single-skill">
+                            <div class="row">
+                              <div class="col-2">
+                                <div class="logo">
+                                  <img src="https://img.icons8.com/color/48/amazon-web-services.png" alt="">
+                                </div>
+                              </div>
+                              <div class="col-10 pl-4">
+                                <h6>AWS</h6>
+                                <p>Currently learning AWS (Amazon Web Services)</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -287,7 +899,7 @@
           <span class="fade-up-item">About Me</span>
           <h3 class="fade-up-item">Goh You Sheng</h3>
           <p class="fade-up-item">
-            Hey! I'm Goh You Sheng, 22 years old. I've been close to a computer since an early age, and been passionate
+            Hey! I'm Goh You Sheng, 23 years old. I've been close to a computer since an early age, and been passionate
             about it ever since. Currently, I'm a fresh grad and looking for job now. Keep following me, I will
             share my journey as a web developer here from time to time.
           </p>
@@ -423,39 +1035,39 @@
         <div class="relative-use">
           <div class="all-portfolio">
             <div class="single-portfolio">
-              <div class="portfolio-img">
-                <img src="./images/portfolio-9.png" alt="">
+              <div class="portfolio-img" id="portfolio-smart-energy-monitoring">
+                <img src="./images/portfolio-smart-energy-monitoring.png" alt="">
               </div>
               <div class="portfolio-text">
                 <h6>Smart Energy Monitoring App</h6>
-                <p>React Native, node.js</p>
-                <span>e-commerce</span>
+                <p>React Native, node.js, express.js, Firebase</p>
+                <span>IoT</span>
               </div>
             </div>
             <div class="single-portfolio">
-              <div class="portfolio-img">
-                <img src="./images/portfolio-2.png" alt="">
+              <div class="portfolio-img" id="portfolio-newpages-merchant">
+                <img src="./images/portfolio-newpages-merchant.png" alt="">
               </div>
               <div class="portfolio-text">
                 <h6>Newpages Merchant System</h6>
-                <p>vue.js</p>
+                <p>vue.js, UI/UX Design, Responsive</p>
                 <span>e-commerce</span>
               </div>
             </div>
 
             <div class="single-portfolio">
-              <div class="portfolio-img">
-                <img src="./images/portfolio-8.png" alt="">
+              <div class="portfolio-img" id="portfolio-payroll">
+                <img src="./images/portfolio-payroll.png" alt="">
               </div>
               <div class="portfolio-text">
                 <h6>Foreign Worker Payroll System</h6>
-                <p>react, node.js</p>
+                <p>react, node.js, MySql</p>
                 <span>payroll</span>
               </div>
             </div>
             <div class="single-portfolio">
-              <div class="portfolio-img">
-                <img src="./images/portfolio-7.png" alt="">
+              <div class="portfolio-img" id="portfolio-groceries">
+                <img src="./images/portfolio-groceries.png" alt="">
               </div>
               <div class="portfolio-text">
                 <h6>Online Groceries Store</h6>
@@ -564,7 +1176,8 @@
             <a href="mailto:gohyoushengabc@gmail.com" target="_blank"><mark class="email-change"> email me</mark></a>
             or
             <a href="http://wa.me/60167663525" target="_blank" class="contact-w-arrow"><mark> whatsapp me
-              </mark><i class="fas fa-arrow-right"></i></a>
+              </mark>
+              <i class="fas fa-arrow-right"></i></a>
           </h2>
         </div>
       </div>
@@ -573,7 +1186,7 @@
   <section class="footer-section">
     <div class="footer-col">
       <div class="copyright-area mobile-text-center">
-        <p>© 2022 Goh You Sheng</p>
+        <p>© 2023 Goh You Sheng</p>
       </div>
     </div>
   </section>
